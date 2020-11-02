@@ -1,0 +1,15 @@
+@startuml 画面遷延図
+
+[*] -> top_page
+top_page -> record1
+
+record1 -> record..
+record.. -> cheack
+cheack -> edit
+edit -> cheack
+cheack -> top_page
+
+top_page -> all_cheack
+all_cheack -> top_page
+
+@enduml
